@@ -19,8 +19,8 @@ body {
 }
 
 .container.fluid {
-    position: relative;
-    top: 71px;
+    position: absolute;
+    bottom:0px;
 }
 
 /* CUSTOMIZE THE NAVBAR
