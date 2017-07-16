@@ -1,12 +1,12 @@
 function displayOne(){
-  $( "body" ).html("<a-scene>"+
+  $( ".canvas-content" ).html("<a-scene>"+
   "<a-sphere color='red' position='0 0 0' rotation='0 45 0 ' scale='2 1 3'></a-sphere>" +
   "<a-marker-camera preset='hiro'></a-marker-camera>" +
   "</a-scene>");
 }
 
 function displayTwo(){
-  $( "body" ).html("<a-scene>"+
+  $( ".canvas-content" ).html("<a-scene>"+
     "<a-assets>" +
       "<a-asset-item id='optimerBoldFont' src='https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json'></a-asset-item>" +
     "</a-assets>" + 
@@ -17,7 +17,7 @@ function displayTwo(){
 }
 
 function displayThree(){
-   $( "body" ).html("<a-scene>"+
+   $( ".canvas-content" ).html("<a-scene>"+
   "<a-sphere position='0 .5 0' radius='1.25' color='blue'>" + 
       
       "<a-sphere position='   0  1  0 ' radius='1' color='green'></a-sphere>" +
@@ -30,7 +30,7 @@ function displayThree(){
 }
 
 function displayFour(){
-  $( "body" ).html("<a-scene>"+
+  $( ".canvas-content" ).html("<a-scene>"+
   "<a-cylinder position='0 0 0' radius='0.5' height='3' src='https://i.imgur.com/mYmmbrp.jpg'>" +
 
     "<a-cylinder position='.25 -1 1' rotation='0 45 0' radius='0.5' height='1.5' color='red'></a-cylinder>" +
@@ -45,7 +45,7 @@ function displayFour(){
 }
 
 function displayFive(){
-  $( "body" ).html("<a-scene>"+
+  $( ".canvas-content" ).html("<a-scene>"+
     "<a-box position='0 .5 0' radius='.5' color='yellow'>" +
 
       "<a-box position='0 0 -.5' rotation='0 45 0' radius='1.25' color='purple'></a-box>" +
@@ -56,3 +56,7 @@ function displayFive(){
     "<a-marker-camera preset='hiro'></a-marker-camera>" +
   "</a-scene>");
 }
+
+$(function() {
+    displayThree();
+});
